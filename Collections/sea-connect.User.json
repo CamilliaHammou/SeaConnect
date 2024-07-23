@@ -1,0 +1,139 @@
+[{
+  "_id": {
+    "$oid": "6696757edf224a78d2964d61"
+  },
+  "firstName": "test2",
+  "lastName": "test2",
+  "email": "test2@gmail.com",
+  "password": "$2b$10$6V5lJzmj.sRPsN65W/fGUOedM0NlLSzdhviVS1N/ExhOiQ4CTu.4W",
+  "role": "ADMIN",
+  "membershipStatus": "ACTIVE",
+  "stripeId": "cus_QU9kEdVvZ2CdS4",
+  "phone": "0601635741",
+  "membershipStartDate": {
+    "$date": "2024-07-21T15:08:42.763Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "669a3687f3cec5a62c7b39a2"
+  },
+  "firstName": "test1",
+  "lastName": "test1",
+  "email": "test1@gmail.com",
+  "password": "$2b$10$IXs7POu4SVqOw0hN.HcnaOMSM4R3LZfKYMylVWi9nTh.dGoe52Y6i",
+  "role": "PRESIDENT",
+  "membershipStatus": "ACTIVE",
+  "stripeId": "cus_QVDs8xrJ2UJFfP",
+  "membershipStartDate": {
+    "$date": "2024-07-21T12:39:20.622Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "669bb87cdc15549251ea6079"
+  },
+  "firstName": "Camillia",
+  "lastName": "HAMMOU",
+  "email": "hammoucamillia27@gmail.com",
+  "password": "$2b$10$BNCj0PoFdpcw/.kft/RO2u/8ocEwc0/7mFBBJV3rbmBk61V31Ynb.",
+  "role": "ADMIN",
+  "membershipStatus": "INACTIVE",
+  "stripeId": "cus_QVeRLlQpiDlTbC"
+},
+{
+  "_id": {
+    "$oid": "669bd099dc15549251ea607d"
+  },
+  "firstName": "Emma",
+  "lastName": "Lorenze",
+  "email": "chammou1@myges.fr",
+  "password": "$2b$10$ETdXy5B7hFosfQg9CYN6WOVfuP/3TDuRg8HJ5qmVHY8pI1lgTKzC.",
+  "role": "USER",
+  "membershipStatus": "INACTIVE",
+  "stripeId": "cus_QVg6wzUlPqUZP4"
+},
+{
+  "_id": {
+    "$oid": "669bd75cdc15549251ea6081"
+  },
+  "firstName": "test",
+  "lastName": "test",
+  "email": "camscam7227@gmail.com",
+  "password": "$2b$10$woYlypVuR1IYnjt50wOP5.Y5hbGUT6394QMpp5ETLL24ffCqgv.gG",
+  "role": "USER",
+  "membershipStatus": "INACTIVE",
+  "stripeId": "cus_QVgZANyAb1IDI4"
+},
+{
+  "_id": {
+    "$oid": "669d0ce505a6189cd1e2c535"
+  },
+  "firstName": "Denisa",
+  "lastName": "Dudas",
+  "email": "ddudas@myges.fr",
+  "password": "$2b$10$3Og9mXWZWuzLWpEbmukRP.xvpzEhB29em7w9DW70XWLXVsrskL9WG",
+  "role": "PRESIDENT",
+  "membershipStatus": "INACTIVE",
+  "stripeId": "cus_QW1rskwJYan5GF"
+},
+{
+  "_id": {
+    "$oid": "669d0ef005a6189cd1e2c536"
+  },
+  "firstName": "Kheira",
+  "lastName": "Hammad",
+  "email": "deny081@outlook.hu",
+  "password": "$2b$10$HC4wv2u2OrYqOPKBSd.6Q.aJLZbwSXSRrujUhC3UiDQtjgV1o/bZi",
+  "role": "SECRETARY",
+  "membershipStatus": "INACTIVE",
+  "stripeId": "cus_QW20Q5ZpoiCZ37"
+},
+{
+  "_id": {
+    "$oid": "669d0f6805a6189cd1e2c537"
+  },
+  "firstName": "Mohamed",
+  "lastName": "Hammeri",
+  "email": "mohammed@gmail.com",
+  "password": "$2b$10$P3IDMIBDQ5s.D.iuI6C0YeG/rtkD7PmZ0NKO47yk7ozR35ryPnSV2",
+  "role": "TREASURER",
+  "membershipStatus": "INACTIVE",
+  "stripeId": "cus_QW224QpKF2F2ta"
+},
+{
+  "_id": {
+    "$oid": "669d102a05a6189cd1e2c538"
+  },
+  "firstName": "Razene",
+  "lastName": "Dema",
+  "email": "razene@gmail.com",
+  "password": "$2b$10$9vxrL8gjvt4KK/68iFJ9ZOIuUe.Ziu8CFlxzBu/Df0LtXaQ0BHwhG",
+  "role": "SECRETARY",
+  "membershipStatus": "INACTIVE",
+  "stripeId": "cus_QW259d0es4IfhX"
+},
+{
+  "_id": {
+    "$oid": "669d112905a6189cd1e2c539"
+  },
+  "firstName": "April",
+  "lastName": "Vanessa",
+  "email": "aprilvanessa@gmail.com",
+  "password": "$2b$10$Q3c14luOArdjBup13Hm4F.WRRX4aSaNpznjN1BDyxandOpxpvHMmG",
+  "role": "USER",
+  "membershipStatus": "INACTIVE",
+  "stripeId": "cus_QW29chY8aAwzeZ"
+},
+{
+  "_id": {
+    "$oid": "669d3925d9018c1b36b80f8d"
+  },
+  "firstName": "Mathilde",
+  "lastName": "Mont",
+  "email": "mathildemont@gmail.com",
+  "password": "$2b$10$PXQyxvKzl1I0JmtsPHNFMePmlohHd6B6aF8t89R5/cFF0QEv2Xn4O",
+  "role": "USER",
+  "membershipStatus": "INACTIVE",
+  "stripeId": "cus_QW4uY0AjhvIhSw"
+}]

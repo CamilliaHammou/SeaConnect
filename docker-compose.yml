@@ -1,0 +1,32 @@
+version: '3.8'
+services:
+  mongo:
+    image: mongo:latest
+    command: --replSet rs0
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+  app:
+    build: ./sea-connect-api
+    ports:
+      - "3002:3002"
+    environment:
+      - DATABASE_URL=mongodb://mongo:27017/sea-connect
+      - SERVER_PORT=3002
+      - JWT_SECRET_KEY=sea_connect
+      - HASH_PASSWORD_SALT_ROUNDS=10
+      - STRIPE_TEST_KEY=sk_test_51IYxO0BznYbWdfr1KZhm5pxrlKzHJV8fdfoDMhBJ8Xb8So8IRwe82rKvD730aqK7K881MZAcfQHWh8bZ5bOWPdOA00gVQ0xqIx
+    depends_on:
+      - mongo
+
+  frontend:
+    build: ./sea-connect-fe
+    ports:
+      - "3000:3000"
+    depends_on:
+      - app
+
+volumes:
+  mongo-data:

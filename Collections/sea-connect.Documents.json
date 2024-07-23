@@ -1,0 +1,30 @@
+[{
+  "_id": {
+    "$oid": "669a3529f3cec5a62c7b399d"
+  },
+  "title": "test.pdf",
+  "documentUrl": "Autre.pdf",
+  "owner": "USER",
+  "fileId": "669a3529897917a5c6286a38",
+  "category": "LEGAL"
+},
+{
+  "_id": {
+    "$oid": "669a3547f3cec5a62c7b399e"
+  },
+  "title": "fichier.pdf",
+  "documentUrl": "Traitement_ML.pdf",
+  "owner": "ADMIN",
+  "fileId": "669a3547897917a5c6286a41",
+  "category": "LEGAL"
+},
+{
+  "_id": {
+    "$oid": "669d436549e94ead5f50b480"
+  },
+  "title": "vie.pdf",
+  "documentUrl": "Traitement_ML.pdf",
+  "owner": "ADMIN",
+  "fileId": "669d43656f54fe4520f112ce",
+  "category": "BUSINESS"
+}]

@@ -1,0 +1,68 @@
+[{
+  "_id": {
+    "$oid": "669cd086c902e699cf6194aa"
+  },
+  "title": "Beach Cleanups",
+  "description": "Participants gather to clean up beaches and coastlines to reduce plastic pollution and protect marine habitats.",
+  "eventDate": {
+    "$date": "2024-07-22T13:00:00.000Z"
+  },
+  "eventDateFin": {
+    "$date": "2024-07-28T18:00:00.000Z"
+  },
+  "location": "Marseille",
+  "organizerId": "669bb87cdc15549251ea6079",
+  "organizerEmail": "hammoucamillia27@gmail.com",
+  "registrationFee": 100
+},
+{
+  "_id": {
+    "$oid": "669cd0c2c902e699cf6194ab"
+  },
+  "title": "Film/Documentary Screenings",
+  "description": "Sea Shepherd hosts screenings of films and documentaries about marine conservation, often followed by discussions or Q&A sessions.",
+  "eventDate": {
+    "$date": "2024-07-27T06:30:00.000Z"
+  },
+  "eventDateFin": {
+    "$date": "2024-07-28T18:30:00.000Z"
+  },
+  "location": "Paris",
+  "organizerId": "669bb87cdc15549251ea6079",
+  "organizerEmail": "hammoucamillia27@gmail.com",
+  "registrationFee": 15
+},
+{
+  "_id": {
+    "$oid": "669cd107c902e699cf6194ac"
+  },
+  "title": "Educational Workshops and Trainings",
+  "description": "Workshops and trainings are organized to educate participants on marine conservation practices, marine animal rescue techniques, and more.",
+  "eventDate": {
+    "$date": "2024-07-29T05:30:00.000Z"
+  },
+  "eventDateFin": {
+    "$date": "2024-07-29T18:00:00.000Z"
+  },
+  "location": "Paris",
+  "organizerId": "669bb87cdc15549251ea6079",
+  "organizerEmail": "hammoucamillia27@gmail.com",
+  "registrationFee": 10
+},
+{
+  "_id": {
+    "$oid": "669d216805a6189cd1e2c53c"
+  },
+  "title": "Fundraising Events",
+  "description": "Dinners, auctions, and other events are held to raise funds to support Sea Shepherd’s missions.",
+  "eventDate": {
+    "$date": "2024-07-29T18:00:00.000Z"
+  },
+  "eventDateFin": {
+    "$date": "2024-07-30T00:30:00.000Z"
+  },
+  "location": "Berlin",
+  "organizerId": "6696757edf224a78d2964d61",
+  "organizerEmail": "test2@gmail.com",
+  "registrationFee": 20
+}]

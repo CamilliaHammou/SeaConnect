@@ -1,0 +1,1569 @@
+{
+	"info": {
+		"_postman_id": "c075dab1-0840-4108-a1cc-201ba2d94d95",
+		"name": "SeaConnect",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32513633"
+	},
+	"item": [
+		{
+			"name": "Admin login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "referer",
+						"value": "http://localhost:3001/",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"hammoucamillia27@gmail.com\",\n    \"password\": \"cams\" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "referer",
+						"value": "http://localhost:3000/",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"Mathildemont@gmail.com\",\n    \"password\": \"123456\",\n    \"firstName\": \"Mathilde\",\n    \"lastName\": \"Mont\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "referer",
+						"value": "http://localhost:3000/",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"hammoucamillia27@gmail.com\",\n    \"password\": \"cams\" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all Member (Admin)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3QrN0BnbWFpbC5jb20iLCJpYXQiOjE3MTUzMDA5NTcsImV4cCI6MTcxNTM4NzM1N30.zob80_VvR-pwHu6xfR5nwOC-fqZYcI7B8244Yee9G1E",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3002/api/member/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"member",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get All contributitons (Admin)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3Q0QGdtYWlsLmNvbSIsImlhdCI6MTcxNTMwMjI0NCwiZXhwIjoxNzE1Mzg4NjQ0fQ.LI3ru9vl7iOZ4PUmkfiSG5-fmDqRfoH5NSjE6HbYznI",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3002/api/contribution",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"contribution"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "irfan_test4@gmail.com",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get All MemberShips",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3Q0QGdtYWlsLmNvbSIsImlhdCI6MTcxNTMwMjI0NCwiZXhwIjoxNzE1Mzg4NjQ0fQ.LI3ru9vl7iOZ4PUmkfiSG5-fmDqRfoH5NSjE6HbYznI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3002/api/membership",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"membership"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "irfan_test4@gmail.com",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get All Active Events",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3QrN0BnbWFpbC5jb20iLCJpYXQiOjE3MTUzMDA5NTcsImV4cCI6MTcxNTM4NzM1N30.zob80_VvR-pwHu6xfR5nwOC-fqZYcI7B8244Yee9G1E",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3002/api/event/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"event",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get All events (Admin)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3QrN0BnbWFpbC5jb20iLCJpYXQiOjE3MTU0NjU0MjksImV4cCI6MTcxNTU1MTgyOX0.qpcOjWozOJ_uWkSfdZ8L4_MzAGvZY1oZIwOVxK5h4eI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3002/api/event/getAllEvents",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"event",
+						"getAllEvents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create Event (Admin)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3QrN0BnbWFpbC5jb20iLCJpYXQiOjE3MTU0NjU0MjksImV4cCI6MTcxNTU1MTgyOX0.qpcOjWozOJ_uWkSfdZ8L4_MzAGvZY1oZIwOVxK5h4eI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Test Event\",\n    \"description\": \"Test description\",\n    \"eventDate\": \"2024-05-20T00:00:00Z\", // const date = new Date(); const formattedDate = date.toISOString();\n    \"location\": \"Test Locatioin\",\n    \"registrationFee\": 34.6\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/event/createEvent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"event",
+						"createEvent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update event (Admin)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3QrN0BnbWFpbC5jb20iLCJpYXQiOjE3MTU0NjU0MjksImV4cCI6MTcxNTU1MTgyOX0.qpcOjWozOJ_uWkSfdZ8L4_MzAGvZY1oZIwOVxK5h4eI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Test Event2\",\n    \"description\": \"Test description\",\n    \"eventDate\": \"2024-05-20T00:00:00Z\", // const date = new Date(); const formattedDate = date.toISOString();\n    \"location\": \"Test Locatioin2\",\n    \"registrationFee\": 34.6\n}\n\n// All params are optional, whichever we send will be updated",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/event/updateEvent/663fef2f0c487a4ab456bcad",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"event",
+						"updateEvent",
+						"663fef2f0c487a4ab456bcad"
+					],
+					"query": [
+						{
+							"key": "eventId",
+							"value": "663fef2f0c487a4ab456bcad?eventId",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Event (Admin)",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3QrN0BnbWFpbC5jb20iLCJpYXQiOjE3MTU0NjU0MjksImV4cCI6MTcxNTU1MTgyOX0.qpcOjWozOJ_uWkSfdZ8L4_MzAGvZY1oZIwOVxK5h4eI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3002/api/event/deleteEvent/663fef2f0c487a4ab456bcad",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"event",
+						"deleteEvent",
+						"663fef2f0c487a4ab456bcad"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "me",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3Q0QGdtYWlsLmNvbSIsImlhdCI6MTcxNTQ2NzAyMiwiZXhwIjoxNzE1NTUzNDIyfQ.dK-wG8Udf-Hxcfi-o9YxKQYJ-1pspd5eYqADY_Dxnac",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3002/api/auth/me",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"auth",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create plan (Admin)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3QrN0BnbWFpbC5jb20iLCJpYXQiOjE3MTU1MjMyMDYsImV4cCI6MTcxNTYwOTYwNn0.7x5ojMY4Guus6QHR8YjpI0m-8VqJSYA1lD9AvVTj0nk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"membershipType\": \"monthly\", // this can only monthly, annual, lifetime\n    \"amount\": 89.0,\n    \"description\": \"Test Plan\" // This is optional\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/plans/create-plan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"plans",
+						"create-plan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get All Active plan (USER)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3Q0QGdtYWlsLmNvbSIsImlhdCI6MTcxNTUyMzUwOSwiZXhwIjoxNzE1NjA5OTA5fQ.JLd0QiA6ten4W-istJ9CO9eI9RXPnHSPImch5fo_ILc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3002/api/plans/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"plans",
+						""
+					],
+					"query": [
+						{
+							"key": "authorization",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all plans (Admin)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3QrN0BnbWFpbC5jb20iLCJpYXQiOjE3MTU1MjMyMDYsImV4cCI6MTcxNTYwOTYwNn0.7x5ojMY4Guus6QHR8YjpI0m-8VqJSYA1lD9AvVTj0nk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3002/api/plans/all-plans",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"plans",
+						"all-plans"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update plan (Admin)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3QrN0BnbWFpbC5jb20iLCJpYXQiOjE3MTU1MjMyMDYsImV4cCI6MTcxNTYwOTYwNn0.7x5ojMY4Guus6QHR8YjpI0m-8VqJSYA1lD9AvVTj0nk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"membershipType\": \"annual\",\n    \"description\": \"Test description2\",\n    \"amount\": 9,\n    \"status\": \"inactive\" // This can be active or inactive only\n}\n\n\n// all params are optional, whichever we send will be updated",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/plans/update-plan/6640cf38d61d4f6262e8c136",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"plans",
+						"update-plan",
+						"6640cf38d61d4f6262e8c136"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create contributioin (USER)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3Q3QGdtYWlsLmNvbSIsImlhdCI6MTcxNTU1ODkwNiwiZXhwIjoxNzE1NjQ1MzA2fQ.hGQu2Xm2PVM5XsMjEg-Ajlq76BaShKMgw0tHBlN20ws",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"contributionType\": \"donation\",  // this can be donation, membership, volunteer, event, other\n    \"amount\": 98\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/contribution/create-contribution",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"contribution",
+						"create-contribution"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get specific user contribution (ADMIN)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3Q5QGdtYWlsLmNvbSIsImlhdCI6MTcxNTU1OTA4MSwiZXhwIjoxNzE1NjQ1NDgxfQ._35akkefgv5BBAYT5hKXfw9Ba2-2YfhfIawScraaFbY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3002/api/contribution/user-contribution/irfan_test7@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"contribution",
+						"user-contribution",
+						"irfan_test7@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "My Contributions (USER)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3Q3QGdtYWlsLmNvbSIsImlhdCI6MTcxNTU1ODkwNiwiZXhwIjoxNzE1NjQ1MzA2fQ.hGQu2Xm2PVM5XsMjEg-Ajlq76BaShKMgw0tHBlN20ws",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3002/api/contribution/my-contribution",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"contribution",
+						"my-contribution"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create Customer on Stripe",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3Q3QGdtYWlsLmNvbSIsImlhdCI6MTcxNTYzNjYwNiwiZXhwIjoxNzE1NzIzMDA2fQ.vZV0ashq_vw1UL4XvIysc7ibOjWJI9c4BiWFSfyN82E",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"cams\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/stripe/create-customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"stripe",
+						"create-customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Customer Stripe",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3Q3QGdtYWlsLmNvbSIsImlhdCI6MTcxNTYzNjYwNiwiZXhwIjoxNzE1NzIzMDA2fQ.vZV0ashq_vw1UL4XvIysc7ibOjWJI9c4BiWFSfyN82E",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customerId\": \"cus_Q6JLomShJmvhzG\",\n    \"name\": \"Cams\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/stripe/update-customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"stripe",
+						"update-customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Setup Intent Stripe",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3Q3QGdtYWlsLmNvbSIsImlhdCI6MTcxNTYzNjYwNiwiZXhwIjoxNzE1NzIzMDA2fQ.vZV0ashq_vw1UL4XvIysc7ibOjWJI9c4BiWFSfyN82E",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customerId\": \"cus_Q6JLomShJmvhzG\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/stripe/create-setup-intent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"stripe",
+						"create-setup-intent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register For Event",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3Q3QGdtYWlsLmNvbSIsImlhdCI6MTcxNTY0MjMwMSwiZXhwIjoxNzE1NzI4NzAxfQ.MsHuIoTJGoRlPEQLK53HWfKNXsnDSWtmZ_NABBN9u1E",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"eventId\": \"66429fa470fbb4d13de00f6c\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/event/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"event",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Membership",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3Q3QGdtYWlsLmNvbSIsImlhdCI6MTcxNTY0MjMwMSwiZXhwIjoxNzE1NzI4NzAxfQ.MsHuIoTJGoRlPEQLK53HWfKNXsnDSWtmZ_NABBN9u1E",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"membershipPlanId\": \"6642a0ef70fbb4d13de00f6f\",\n    \"membershipType\": \"annual\" //This can be monthly, annual, lifetime\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/membership/create-membership",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"membership",
+						"create-membership"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Vote (Admin)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3Q5QGdtYWlsLmNvbSIsImlhdCI6MTcxNjA2Njg5NCwiZXhwIjoxNzE2MTUzMjk0fQ.Fe9ncaW-CaPRdVux5y9mYeSVm6dZOEqZk4aNQOTDFkE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Who will be next President of USA?\",\n    \"description\": \"\", // This is optional parameter\n    \"totalRounds\": 2, // This is optional, default will be one, also the maximum will be two\n    \"resultType\": \"relative\" // This can be absolute, relative \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/vote/create-vote",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"vote",
+						"create-vote"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create VOTE Round (ADMIN)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3Q5QGdtYWlsLmNvbSIsImlhdCI6MTcxNjA2Njg5NCwiZXhwIjoxNzE2MTUzMjk0fQ.Fe9ncaW-CaPRdVux5y9mYeSVm6dZOEqZk4aNQOTDFkE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"voteId\": \"66492d071b0089ee606c8262\",\n    \"startDate\": \"2024-05-20T00:00:00Z\", // const date = new Date(); const formattedDate = date.toISOString();\n    \"endDate\": \"2024-05-25T00:00:00Z\",\n    \"voteOptions\": [\"Trumppppp\", \"obama\", \"washington JONES\", \"Biden\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/vote/create-round",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"vote",
+						"create-round"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Active Votes (USER, ADMIN))",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3Q5QGdtYWlsLmNvbSIsImlhdCI6MTcxNjEyNTAyMSwiZXhwIjoxNzE2MjExNDIxfQ.hwD7euBift66FEZvFgIxzsBG6WTQn58x6WcbLr-sd7A",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3002/api/vote/get-active-votes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"vote",
+						"get-active-votes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CAST VOTE (USER, ADMIN))",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3Q5QGdtYWlsLmNvbSIsImlhdCI6MTcxNjEyNjg4NywiZXhwIjoxNzE2MjEzMjg3fQ.yVRG8-pMQR279oxyjMu2XckGmqLobbnWoELSkzoaJOw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"voteId\": \"6649fdfe145cb918add970eb\",\n    \"roundId\": \"6649ff66145cb918add970ec\",\n    \"voteOption\": \"obama\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/vote/cast-vote",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"vote",
+						"cast-vote"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Winner (USER, ADMIN)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3Q5QGdtYWlsLmNvbSIsImlhdCI6MTcxNjE1Mzk1NywiZXhwIjoxNzE2MjQwMzU3fQ.vIxL4LGCmWKcsyMQVDMrP2oCA6b4fO-SPKjjS2uCyFA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3002/api/vote/get-round-result/6649ff66145cb918add970ec",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"vote",
+						"get-round-result",
+						"6649ff66145cb918add970ec"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Rouund (ADMIN)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3Q5QGdtYWlsLmNvbSIsImlhdCI6MTcxNjE1Mzk1NywiZXhwIjoxNzE2MjQwMzU3fQ.vIxL4LGCmWKcsyMQVDMrP2oCA6b4fO-SPKjjS2uCyFA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"endDate\": \"2024-05-19T00:00:00.000Z\"\n}\n\n// other params can startDate, voteOptions",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/vote/update-round/6649ff66145cb918add970ec",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"vote",
+						"update-round",
+						"6649ff66145cb918add970ec"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get FInished Votes (USER, ADMIN), User, Admin can see the result of these votes only",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3Q5QGdtYWlsLmNvbSIsImlhdCI6MTcxNjE1Mzk1NywiZXhwIjoxNzE2MjQwMzU3fQ.vIxL4LGCmWKcsyMQVDMrP2oCA6b4fO-SPKjjS2uCyFA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3002/api/vote/get-compeleted-votes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"vote",
+						"get-compeleted-votes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE ASSEMBLY (ADMIN)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3Q5QGdtYWlsLmNvbSIsImlhdCI6MTcxNjQxNTgxOCwiZXhwIjoxNzE2NTAyMjE4fQ.NqUaDVrzPZ3_Mn2aH8vO47EbMiuWneYt3IM-R3JkxkI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Test Assembly\",\n    \"description\": \"Test description\",\n    \"date\": \"2024-05-23T00:00:00.000Z\",\n    \"type\": \"general\",\n    \"quorumRequired\": 5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/assemblies/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"assemblies",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET All Assembliies (USER, ADMIN)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3Q5QGdtYWlsLmNvbSIsImlhdCI6MTcxNjQxNTgxOCwiZXhwIjoxNzE2NTAyMjE4fQ.NqUaDVrzPZ3_Mn2aH8vO47EbMiuWneYt3IM-R3JkxkI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3002/api/assemblies/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"assemblies",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update. Assembly (ADMIN)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3Q5QGdtYWlsLmNvbSIsImlhdCI6MTcxNjQ5ODk5MiwiZXhwIjoxNzE2NTg1MzkyfQ.eRFL0HnVJLm8rbSuUaf2VJepSSP5ebPbrD9tuNZtMsw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"status\": \"planned\", // It can be planned, ongoing or completed\n    \"title\" : \"Test Update\",\n    \"description\": \"Test description\",\n    \"date\" : \"2024-05-24T00:00:00.000Z\",\n    \"type\": \"extraordinary\", // it can be general or extraordinary\n    \"quorumRequired\": 5,\n    \"minutes\": \"We dsicussed about US Assembly\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/assemblies/update/664e6fbcedad2d2c8ace85c5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"assemblies",
+						"update",
+						"664e6fbcedad2d2c8ace85c5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CAST VOTE IN ASSEMBLY (USER)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3Q5QGdtYWlsLmNvbSIsImlhdCI6MTcxNjQ5ODk5MiwiZXhwIjoxNzE2NTg1MzkyfQ.eRFL0HnVJLm8rbSuUaf2VJepSSP5ebPbrD9tuNZtMsw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"voteType\" : \"against\" // It can be against or abstain\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/assemblies/664fb8e2aa718da7b8e2e0ea/vote",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"assemblies",
+						"664fb8e2aa718da7b8e2e0ea",
+						"vote"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Assembly Vote Result (Admin)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3Q5QGdtYWlsLmNvbSIsImlhdCI6MTcxNjU1NTk2NiwiZXhwIjoxNzE2NjQyMzY2fQ.O_INDx86Bj_OQ5JfQFf-L2vqXVOXF_xNZM14Skbf1a8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3002/api/assemblies/664fb8e2aa718da7b8e2e0ea/result",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"assemblies",
+						"664fb8e2aa718da7b8e2e0ea",
+						"result"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload File (ADMIN, USER)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhlbGxAY2F0LmNvbSIsImlhdCI6MTcxNjgyMDM5NywiZXhwIjoxNzE2OTA2Nzk3fQ.S-7Y6jOwSXf8Tn8icc5fG1hF2fH4-gceQNK4Ba4-GOA"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/HamzaFarooq/Downloads/Final Project.docx"
+						},
+						{
+							"key": "title",
+							"value": "\"irfan.pdf\"",
+							"type": "text"
+						},
+						{
+							"key": "owner",
+							"value": "\"admin\"",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/document/upload/some",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"document",
+						"upload",
+						"some"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Download File (USER, ADMIn)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3Q5QGdtYWlsLmNvbSIsImlhdCI6MTcxNjY4MTk4MSwiZXhwIjoxNzE2NzY4MzgxfQ.InfxyTxpJiscBF2Vh5Z1bQ3eBJw9zyQGS9fpFRxf8eI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3002/api/document/cams.pdf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"document",
+						"cams.pdf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get All Documents",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3QxMEBnbWFpbC5jb20iLCJpYXQiOjE3MTY4MzQ1MDIsImV4cCI6MTcxNjkyMDkwMn0.IauvkCUPU5caanq1peHxBdqrXLV6325vP-XiDMuSbHY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3002/api/document",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"document"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All notifications ",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3QxMEBnbWFpbC5jb20iLCJpYXQiOjE3MTcxMDk1ODQsImV4cCI6MTcxNzE5NTk4NH0.CWefYNcW45ZDtlhp3kOy2ms6qeyrUcb_FeGTs1LKqug",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/notification",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"notification"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mark notification as read",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3QxMEBnbWFpbC5jb20iLCJpYXQiOjE3MTcxMDk1ODQsImV4cCI6MTcxNzE5NTk4NH0.CWefYNcW45ZDtlhp3kOy2ms6qeyrUcb_FeGTs1LKqug",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"notificationId\": \"665902b9b0b2fd0d71718864\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/notification/mark-read",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"notification",
+						"mark-read"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send Notification (Admin)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3QxQGdtYWlsLmNvbSIsImlhdCI6MTcxNzEwOTEzNSwiZXhwIjoxNzE3MTk1NTM1fQ.Jrqeia6lL7TvaTgtR3Dyxdcb61u9Q1Kx3Z4BzS_hMXg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Chrismis Event 2\",\n    \"description\": \"Dear Members Another Chrismis event is going to held\",\n    \"notiificationType\": \"event\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/notification/create-notification",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"notification",
+						"create-notification"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Start Discussion (Admin)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3QxQGdtYWlsLmNvbSIsImlhdCI6MTcxNzE2OTU3NCwiZXhwIjoxNzE3MjU1OTc0fQ.avko6-7rYv6O__4v9-1Gm4qn2o8TpCXcLMOvLUVc7RM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Easter Day\",\n    \"description\": \"Lets Comment for Easter\" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/discussion/start",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"discussion",
+						"start"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Comment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3QxMEBnbWFpbC5jb20iLCJpYXQiOjE3MTcxNjk5NjUsImV4cCI6MTcxNzI1NjM2NX0.SYAfqRUJqCjedLstbb49bs7XI1_bY0VbIkoQZzlwd9o",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"comment\": \"I am in\",\n    \"discussionId\": \"6659ee3052699a52b7462797\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/discussion/add-comment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"discussion",
+						"add-comment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Discussions",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3QxMEBnbWFpbC5jb20iLCJpYXQiOjE3MTcxNjk5NjUsImV4cCI6MTcxNzI1NjM2NX0.SYAfqRUJqCjedLstbb49bs7XI1_bY0VbIkoQZzlwd9o",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3002/api/discussion/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"discussion",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Comments of a discussions",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3QxMEBnbWFpbC5jb20iLCJpYXQiOjE3MTcxNjk5NjUsImV4cCI6MTcxNzI1NjM2NX0.SYAfqRUJqCjedLstbb49bs7XI1_bY0VbIkoQZzlwd9o",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3002/api/discussion/get-comment/6659ee3052699a52b7462797",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"discussion",
+						"get-comment",
+						"6659ee3052699a52b7462797"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Comment",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZmFuX3Rlc3QxMEBnbWFpbC5jb20iLCJpYXQiOjE3MTcxNjk5NjUsImV4cCI6MTcxNzI1NjM2NX0.SYAfqRUJqCjedLstbb49bs7XI1_bY0VbIkoQZzlwd9o",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3002/api/discussion/delete-comment/6659ef77ee3709674433710b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"discussion",
+						"delete-comment",
+						"6659ef77ee3709674433710b"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

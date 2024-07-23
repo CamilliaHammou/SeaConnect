@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "6696767edf224a78d2964d66"
+  },
+  "membershipType": "MONTHLY",
+  "amount": 100,
+  "description": "per month",
+  "status": "INACTIVE"
+},
+{
+  "_id": {
+    "$oid": "669d243305a6189cd1e2c542"
+  },
+  "membershipType": "MONTHLY",
+  "amount": 10,
+  "description": "per month",
+  "status": "ACTIVE"
+},
+{
+  "_id": {
+    "$oid": "669d244405a6189cd1e2c543"
+  },
+  "membershipType": "ANNUAL",
+  "amount": 150,
+  "description": "per year ",
+  "status": "ACTIVE"
+},
+{
+  "_id": {
+    "$oid": "669d245605a6189cd1e2c544"
+  },
+  "membershipType": "LIFETIME",
+  "amount": 300,
+  "description": "for life",
+  "status": "ACTIVE"
+}]

@@ -1,0 +1,230 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  USER
+  ADMIN
+  PRESIDENT
+  SECRETARY
+  TREASURER
+}
+
+enum MembershipStatus {
+  ACTIVE
+  INACTIVE
+}
+
+model User {
+  id                     String   @id @default(auto()) @map("_id") @db.ObjectId
+  firstName              String?
+  lastName               String?
+  email                  String @unique
+  password               String
+  role                   Role @default(USER)
+  phone                  String? @unique
+  membershipStatus       MembershipStatus @default(INACTIVE)
+  membershipStartDate    DateTime?
+  address                String?
+  stripeId               String?
+}
+
+
+enum MembershipType {
+  MONTHLY
+  ANNUAL
+  LIFETIME
+}
+
+model MembershipPlans {
+  id                    String   @id @default(auto()) @map("_id") @db.ObjectId
+  membershipType        MembershipType
+  amount                Float
+  description           String?
+  status                MembershipStatus 
+}
+
+model MembershipHistory {
+  id                    String   @id @default(auto()) @map("_id") @db.ObjectId
+  membershipPlanId      String
+  userID                String
+  userEmail             String
+  startDate             DateTime
+  endDate               DateTime
+  membershipType        MembershipType
+}
+
+
+enum ContributionType {
+  DONATION
+  MEMBERSHIP
+  VOLUNTEER
+  EVENT
+  OTHER
+}
+model Contribution {
+  id                    String   @id @default(auto()) @map("_id") @db.ObjectId
+  userID                String
+  userEmail             String
+  amount                Float
+  contributionDate      DateTime
+  contributionType      ContributionType
+}
+
+model Events {
+  id                    String   @id @default(auto()) @map("_id") @db.ObjectId
+  title                 String
+  description           String?
+  eventDate             DateTime
+  eventDateFin          DateTime?
+  location              String
+  organizerId           String
+  organizerEmail        String
+  registrationFee       Float
+}
+
+
+enum ResgisterationStatus {
+  CONFIRMED
+  CANCELLED
+  PENDING
+}
+model EventRegistrations {
+  id                    String   @id @default(auto()) @map("_id") @db.ObjectId
+  memberID              String
+  memberEmail           String
+  eventID               String
+  registrationDate      DateTime
+  status                ResgisterationStatus
+}
+
+enum voteType {
+  SINGLE_ROUND
+  TWO_ROUNDS
+}
+
+enum resultType {
+  ABSOLUTE
+  RELATIVE
+}
+model Votes {
+  id                    String   @id @default(auto()) @map("_id") @db.ObjectId
+  title                 String
+  description           String?
+  totalRounds           Int?
+  resultType            resultType
+}
+
+enum roundNumber {
+  FIRST
+  SECOND
+}
+
+model VoteRounds {
+  id                    String   @id @default(auto()) @map("_id") @db.ObjectId
+  voteId                String
+  roundNumber           roundNumber
+  startDate             DateTime
+  endDate               DateTime
+  voteOptions           String[]
+}
+
+
+model VoteCast {
+  id                    String   @id @default(auto()) @map("_id") @db.ObjectId
+  voteId                String
+  roundId               String
+  voterId               String
+  voterEmail            String
+  voteOption            String
+}
+
+enum assemblyType {
+  GENERAL
+  EXTRAORDINARY
+}
+
+enum assemblyStatus {
+  planned
+  PLANNED
+  ONGOING
+  COMPLETED
+}
+
+type Vote {
+  userEmail String
+  voteType  String
+}
+
+model GeneralAssembly {
+  id                    String   @id @default(auto()) @map("_id") @db.ObjectId
+  title                 String
+  description           String?
+  date                  DateTime
+  type                  assemblyType
+  quorumRequired        Int
+  votes                 Vote[]
+  status                assemblyStatus
+  minutes               String
+}
+
+
+enum docType {
+  LEGAL
+  TECH
+  BUSINESS
+  ACADEMIC
+  OTHER
+}
+model Documents {
+  id                    String @id @default(auto()) @map("_id") @db.ObjectId
+  title                 String @unique
+  description           String?
+  documentUrl           String
+  owner                 Role
+  fileId                String
+  category              String?
+}
+
+
+enum notiificationType {
+  EVENT
+  ACTION
+  OTHER
+}
+model Notifications {
+  id                    String   @id @default(auto()) @map("_id") @db.ObjectId
+  userId                String
+  userEmail             String
+  title                 String
+  description           String?
+  notiificationType     String
+}
+
+model UserNotifications {
+  id                    String   @id @default(auto()) @map("_id") @db.ObjectId
+  userId                String
+  userEmail             String
+  notificationId        String
+}
+
+model Discussions {
+  id                    String   @id @default(auto()) @map("_id") @db.ObjectId
+  title                 String
+  description           String?
+  date                  DateTime
+}
+
+model Comments {
+  id                    String   @id @default(auto()) @map("_id") @db.ObjectId
+  discussionId          String
+  userId                String
+  userEmail             String
+  comment               String
+  date                  DateTime
+}

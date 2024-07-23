@@ -1,0 +1,48 @@
+[{
+  "_id": {
+    "$oid": "669a3529897917a5c6286a38"
+  },
+  "length": 1887388,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-07-19T09:43:05.689Z"
+  },
+  "filename": "Autre.pdf",
+  "contentType": "application/pdf"
+},
+{
+  "_id": {
+    "$oid": "669a3547897917a5c6286a41"
+  },
+  "length": 223722,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-07-19T09:43:35.875Z"
+  },
+  "filename": "Traitement_ML.pdf",
+  "contentType": "application/pdf"
+},
+{
+  "_id": {
+    "$oid": "669bd65b58361a62459f6d74"
+  },
+  "length": 223722,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-07-20T15:23:07.383Z"
+  },
+  "filename": "Traitement_ML.pdf",
+  "contentType": "application/pdf"
+},
+{
+  "_id": {
+    "$oid": "669d43656f54fe4520f112ce"
+  },
+  "length": 223722,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2024-07-21T17:20:37.686Z"
+  },
+  "filename": "Traitement_ML.pdf",
+  "contentType": "application/pdf"
+}]

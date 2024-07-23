@@ -1,0 +1,108 @@
+[{
+  "_id": {
+    "$oid": "669a373cf3cec5a62c7b39a3"
+  },
+  "userID": "669a3687f3cec5a62c7b39a2",
+  "userEmail": "test1@gmail.com",
+  "amount": 100,
+  "contributionDate": {
+    "$date": "2024-07-19T09:51:56.476Z"
+  },
+  "contributionType": "DONATION"
+},
+{
+  "_id": {
+    "$oid": "669cd436c902e699cf6194ae"
+  },
+  "userID": "669a3687f3cec5a62c7b39a2",
+  "userEmail": "test1@gmail.com",
+  "amount": 100,
+  "contributionDate": {
+    "$date": "2024-07-21T09:26:14.958Z"
+  },
+  "contributionType": "DONATION"
+},
+{
+  "_id": {
+    "$oid": "669cfacbc4433bda875cb36c"
+  },
+  "userID": "6696757edf224a78d2964d61",
+  "userEmail": "test2@gmail.com",
+  "amount": 120,
+  "contributionDate": {
+    "$date": "2024-07-21T12:10:51.993Z"
+  },
+  "contributionType": "DONATION"
+},
+{
+  "_id": {
+    "$oid": "669cfbddc4433bda875cb36d"
+  },
+  "userID": "6696757edf224a78d2964d61",
+  "userEmail": "test2@gmail.com",
+  "amount": 100,
+  "contributionDate": {
+    "$date": "2024-07-21T12:15:25.525Z"
+  },
+  "contributionType": "DONATION"
+},
+{
+  "_id": {
+    "$oid": "669cfd68c4433bda875cb36e"
+  },
+  "userID": "6696757edf224a78d2964d61",
+  "userEmail": "test2@gmail.com",
+  "amount": 100,
+  "contributionDate": {
+    "$date": "2024-07-21T12:22:00.017Z"
+  },
+  "contributionType": "DONATION"
+},
+{
+  "_id": {
+    "$oid": "669cffa505a6189cd1e2c527"
+  },
+  "userID": "6696757edf224a78d2964d61",
+  "userEmail": "test2@gmail.com",
+  "amount": 150,
+  "contributionDate": {
+    "$date": "2024-07-21T12:31:33.517Z"
+  },
+  "contributionType": "DONATION"
+},
+{
+  "_id": {
+    "$oid": "669d005c05a6189cd1e2c528"
+  },
+  "userID": "6696757edf224a78d2964d61",
+  "userEmail": "test2@gmail.com",
+  "amount": 5,
+  "contributionDate": {
+    "$date": "2024-07-21T12:34:36.547Z"
+  },
+  "contributionType": "DONATION"
+},
+{
+  "_id": {
+    "$oid": "669d014505a6189cd1e2c52c"
+  },
+  "userID": "6696757edf224a78d2964d61",
+  "userEmail": "test2@gmail.com",
+  "amount": 2,
+  "contributionDate": {
+    "$date": "2024-07-21T12:38:29.038Z"
+  },
+  "contributionType": "VOLUNTEER"
+},
+{
+  "_id": {
+    "$oid": "669d017305a6189cd1e2c530"
+  },
+  "userID": "669a3687f3cec5a62c7b39a2",
+  "userEmail": "test1@gmail.com",
+  "amount": 3,
+  "contributionDate": {
+    "$date": "2024-07-21T12:39:15.425Z"
+  },
+  "contributionType": "VOLUNTEER"
+}]
