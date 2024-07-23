@@ -13,7 +13,7 @@
 				"header": [
 					{
 						"key": "referer",
-						"value": "http://localhost:3001/",
+						"value": "http://185.216.27.140:3001/",
 						"type": "text"
 					}
 				],
@@ -27,10 +27,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3002/api/auth/login",
+					"raw": "http://185.216.27.140:3002/api/auth/login",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -49,7 +49,7 @@
 				"header": [
 					{
 						"key": "referer",
-						"value": "http://localhost:3000/",
+						"value": "http://185.216.27.140:3000/",
 						"type": "text"
 					}
 				],
@@ -63,10 +63,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3002/api/auth/register",
+					"raw": "http://185.216.27.140:3002/api/auth/register",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -85,7 +85,7 @@
 				"header": [
 					{
 						"key": "referer",
-						"value": "http://localhost:3000/",
+						"value": "http://185.216.27.140:3000/",
 						"type": "text",
 						"disabled": true
 					}
@@ -100,10 +100,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3002/api/auth/login",
+					"raw": "http://185.216.27.140:3002/api/auth/login",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -127,10 +127,10 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3002/api/member/",
+					"raw": "http://185.216.27.140:3002/api/member/",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -160,10 +160,10 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3002/api/contribution",
+					"raw": "http://185.216.27.140:3002/api/contribution",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -193,10 +193,10 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3002/api/membership",
+					"raw": "http://185.216.27.140:3002/api/membership",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -226,10 +226,10 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3002/api/event/",
+					"raw": "http://185.216.27.140:3002/api/event/",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -253,10 +253,10 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3002/api/event/getAllEvents",
+					"raw": "http://185.216.27.140:3002/api/event/getAllEvents",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -289,10 +289,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3002/api/event/createEvent",
+					"raw": "http://185.216.27.140:3002/api/event/createEvent",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -325,10 +325,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3002/api/event/updateEvent/663fef2f0c487a4ab456bcad",
+					"raw": "http://185.216.27.140:3002/api/event/updateEvent/663fef2f0c487a4ab456bcad",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -360,10 +360,10 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3002/api/event/deleteEvent/663fef2f0c487a4ab456bcad",
+					"raw": "http://185.216.27.140:3002/api/event/deleteEvent/663fef2f0c487a4ab456bcad",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -388,10 +388,10 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3002/api/auth/me",
+					"raw": "http://185.216.27.140:3002/api/auth/me",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -424,10 +424,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3002/api/plans/create-plan",
+					"raw": "http://185.216.27.140:3002/api/plans/create-plan",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -451,10 +451,10 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3002/api/plans/",
+					"raw": "http://185.216.27.140:3002/api/plans/",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -485,10 +485,10 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3002/api/plans/all-plans",
+					"raw": "http://185.216.27.140:3002/api/plans/all-plans",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -521,10 +521,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3002/api/plans/update-plan/6640cf38d61d4f6262e8c136",
+					"raw": "http://185.216.27.140:3002/api/plans/update-plan/6640cf38d61d4f6262e8c136",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -558,10 +558,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3002/api/contribution/create-contribution",
+					"raw": "http://185.216.27.140:3002/api/contribution/create-contribution",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -585,10 +585,10 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3002/api/contribution/user-contribution/irfan_test7@gmail.com",
+					"raw": "http://185.216.27.140:3002/api/contribution/user-contribution/irfan_test7@gmail.com",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -613,10 +613,10 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3002/api/contribution/my-contribution",
+					"raw": "http://185.216.27.140:3002/api/contribution/my-contribution",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -649,10 +649,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3002/api/stripe/create-customer",
+					"raw": "http://185.216.27.140:3002/api/stripe/create-customer",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -685,10 +685,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3002/api/stripe/update-customer",
+					"raw": "http://185.216.27.140:3002/api/stripe/update-customer",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -721,10 +721,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3002/api/stripe/create-setup-intent",
+					"raw": "http://185.216.27.140:3002/api/stripe/create-setup-intent",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -757,10 +757,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3002/api/event/register",
+					"raw": "http://185.216.27.140:3002/api/event/register",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -793,10 +793,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3002/api/membership/create-membership",
+					"raw": "http://185.216.27.140:3002/api/membership/create-membership",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -829,10 +829,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3002/api/vote/create-vote",
+					"raw": "http://185.216.27.140:3002/api/vote/create-vote",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -865,10 +865,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3002/api/vote/create-round",
+					"raw": "http://185.216.27.140:3002/api/vote/create-round",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -892,10 +892,10 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3002/api/vote/get-active-votes",
+					"raw": "http://185.216.27.140:3002/api/vote/get-active-votes",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -928,10 +928,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3002/api/vote/cast-vote",
+					"raw": "http://185.216.27.140:3002/api/vote/cast-vote",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -955,10 +955,10 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3002/api/vote/get-round-result/6649ff66145cb918add970ec",
+					"raw": "http://185.216.27.140:3002/api/vote/get-round-result/6649ff66145cb918add970ec",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -992,10 +992,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3002/api/vote/update-round/6649ff66145cb918add970ec",
+					"raw": "http://185.216.27.140:3002/api/vote/update-round/6649ff66145cb918add970ec",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -1020,10 +1020,10 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3002/api/vote/get-compeleted-votes",
+					"raw": "http://185.216.27.140:3002/api/vote/get-compeleted-votes",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -1056,10 +1056,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3002/api/assemblies/create",
+					"raw": "http://185.216.27.140:3002/api/assemblies/create",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -1083,10 +1083,10 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3002/api/assemblies/get",
+					"raw": "http://185.216.27.140:3002/api/assemblies/get",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -1119,10 +1119,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3002/api/assemblies/update/664e6fbcedad2d2c8ace85c5",
+					"raw": "http://185.216.27.140:3002/api/assemblies/update/664e6fbcedad2d2c8ace85c5",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -1156,10 +1156,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3002/api/assemblies/664fb8e2aa718da7b8e2e0ea/vote",
+					"raw": "http://185.216.27.140:3002/api/assemblies/664fb8e2aa718da7b8e2e0ea/vote",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -1184,10 +1184,10 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3002/api/assemblies/664fb8e2aa718da7b8e2e0ea/result",
+					"raw": "http://185.216.27.140:3002/api/assemblies/664fb8e2aa718da7b8e2e0ea/result",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -1231,10 +1231,10 @@
 					]
 				},
 				"url": {
-					"raw": "http://localhost:3002/api/document/upload/some",
+					"raw": "http://185.216.27.140:3002/api/document/upload/some",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -1259,10 +1259,10 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3002/api/document/cams.pdf",
+					"raw": "http://185.216.27.140:3002/api/document/cams.pdf",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -1286,10 +1286,10 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3002/api/document",
+					"raw": "http://185.216.27.140:3002/api/document",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -1324,10 +1324,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3002/api/notification",
+					"raw": "http://185.216.27.140:3002/api/notification",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -1359,10 +1359,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3002/api/notification/mark-read",
+					"raw": "http://185.216.27.140:3002/api/notification/mark-read",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -1395,10 +1395,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3002/api/notification/create-notification",
+					"raw": "http://185.216.27.140:3002/api/notification/create-notification",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -1431,10 +1431,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3002/api/discussion/start",
+					"raw": "http://185.216.27.140:3002/api/discussion/start",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -1467,10 +1467,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3002/api/discussion/add-comment",
+					"raw": "http://185.216.27.140:3002/api/discussion/add-comment",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -1494,10 +1494,10 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3002/api/discussion/",
+					"raw": "http://185.216.27.140:3002/api/discussion/",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -1521,10 +1521,10 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3002/api/discussion/get-comment/6659ee3052699a52b7462797",
+					"raw": "http://185.216.27.140:3002/api/discussion/get-comment/6659ee3052699a52b7462797",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [
@@ -1549,10 +1549,10 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3002/api/discussion/delete-comment/6659ef77ee3709674433710b",
+					"raw": "http://185.216.27.140:3002/api/discussion/delete-comment/6659ef77ee3709674433710b",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"185.216.27.140"
 					],
 					"port": "3002",
 					"path": [

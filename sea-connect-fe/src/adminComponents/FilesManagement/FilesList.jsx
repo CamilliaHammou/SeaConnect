@@ -16,7 +16,7 @@ const FilesList = ({ files, setUserFiles }) => {
       redirect: "follow",
     };
 
-    fetch(`http://localhost:3002/api/document/delete/${title}`, requestOptions)
+    fetch(`http://185.216.27.140:3002/api/document/delete/${title}`, requestOptions)
       .then((response) => response.json())
       .then((result) => {
         if (result.success) {
@@ -85,7 +85,7 @@ export default FilesList;
 //     redirect: "follow",
 //   };
 
-//   fetch(`http://localhost:3002/api/document/${title}`, requestOptions)
+//   fetch(`http://185.216.27.140:3002/api/document/${title}`, requestOptions)
 //     .then((response) => response.json())
 //     .then((result) => {
 //       if (result.success) {

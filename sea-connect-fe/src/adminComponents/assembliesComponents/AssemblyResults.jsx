@@ -15,7 +15,7 @@ const AssemblyResults = ({ onClose, user, assembly }) => {
     };
 
     fetch(
-      `http://localhost:3002/api/assemblies/${assembly.id}/result`,
+      `http://185.216.27.140:3002/api/assemblies/${assembly.id}/result`,
       requestOptions
     )
       .then((response) => response.json())

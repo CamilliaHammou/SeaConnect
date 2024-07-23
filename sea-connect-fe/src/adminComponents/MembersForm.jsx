@@ -47,7 +47,7 @@ const MembersForm = ({ onClose, isEditing, userData, getAllMembers }) => {
       redirect: "follow",
     };
 
-    fetch("http://localhost:3002/api/member/add", requestOptions)
+    fetch("http://185.216.27.140:3002/api/member/add", requestOptions)
       .then((response) => response.json())
       .then((result) => {
         console.log("Server response:", result);
@@ -96,7 +96,7 @@ const MembersForm = ({ onClose, isEditing, userData, getAllMembers }) => {
       redirect: "follow",
     };
 
-    fetch("http://localhost:3002/api/member/update", requestOptions)
+    fetch("http://185.216.27.140:3002/api/member/update", requestOptions)
       .then((response) => response.json())
       .then((result) => {
         console.log("Server response for edit:", result);

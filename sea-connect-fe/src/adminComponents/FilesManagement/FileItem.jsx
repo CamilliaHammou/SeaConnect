@@ -11,7 +11,7 @@ const FileItem = ({ file, user, onDelete }) => {
       redirect: "follow",
     };
 
-    fetch(`http://localhost:3002/api/document/${title}`, requestOptions)
+    fetch(`http://185.216.27.140:3002/api/document/${title}`, requestOptions)
       .then((response) => {
         if (!response.ok) throw new Error("Network response was not ok");
         return response.blob();

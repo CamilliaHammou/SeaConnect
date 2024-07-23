@@ -47,7 +47,7 @@ const EventForm = ({ event, onClose, getAllEvents, isEditing = false }) => {
     };
 
     fetch(
-      `http://localhost:3002/api/event/updateEvent/${event.id}`,
+      `http://185.216.27.140:3002/api/event/updateEvent/${event.id}`,
       requestOptions
     )
       .then((response) => response.json())
@@ -90,7 +90,7 @@ const EventForm = ({ event, onClose, getAllEvents, isEditing = false }) => {
       redirect: "follow",
     };
 
-    fetch("http://localhost:3002/api/event/createEvent", requestOptions)
+    fetch("http://185.216.27.140:3002/api/event/createEvent", requestOptions)
       .then((response) => response.json())
       .then((result) => {
         console.log(result);

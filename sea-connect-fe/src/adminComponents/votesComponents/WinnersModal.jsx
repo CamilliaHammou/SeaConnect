@@ -18,7 +18,7 @@ const WinnersModal = ({ vote, round, onClose }) => {
     };
 
     fetch(
-      `http://localhost:3002/api/vote/get-round-result/${round.id}`,
+      `http://185.216.27.140:3002/api/vote/get-round-result/${round.id}`,
       requestOptions
     )
       .then((response) => response.json())

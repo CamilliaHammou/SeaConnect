@@ -49,7 +49,7 @@ const RoundTwoForm = ({ round, voteId, getAllVotes, isEditing, onClose }) => {
     };
 
     fetch(
-      `http://localhost:3002/api/vote/update-round/${round.id}`,
+      `http://185.216.27.140:3002/api/vote/update-round/${round.id}`,
       requestOptions
     )
       .then((response) => response.json())
@@ -92,7 +92,7 @@ const RoundTwoForm = ({ round, voteId, getAllVotes, isEditing, onClose }) => {
       redirect: "follow",
     };
 
-    fetch("http://localhost:3002/api/vote/create-round", requestOptions)
+    fetch("http://185.216.27.140:3002/api/vote/create-round", requestOptions)
       .then((response) => response.json())
       .then((result) => {
         console.log(result);

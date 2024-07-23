@@ -24,7 +24,7 @@ const Contributions = () => {
       const config = {
         method: "post",
         maxBodyLength: Infinity,
-        url: "http://localhost:3002/api/contribution/create-contribution",
+        url: "http://185.216.27.140:3002/api/contribution/create-contribution",
         headers: {
           authorization: user.token,
           "Content-Type": "application/json",

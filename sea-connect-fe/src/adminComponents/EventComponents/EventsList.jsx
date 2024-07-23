@@ -26,7 +26,7 @@ const EventsList = ({ events, getAllEvents, user }) => {
     };
 
     fetch(
-      `http://localhost:3002/api/event/deleteEvent/${evt.id}`,
+      `http://185.216.27.140:3002/api/event/deleteEvent/${evt.id}`,
       requestOptions
     )
       .then((response) => response.json())

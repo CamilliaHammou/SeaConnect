@@ -22,7 +22,7 @@ const Discussions = () => {
       redirect: "follow",
     };
 
-    fetch("http://localhost:3002/api/discussion/", requestOptions)
+    fetch("http://185.216.27.140:3002/api/discussion/", requestOptions)
       .then(response => response.json())
       .then(result => {
         if (result.success) {
@@ -40,7 +40,7 @@ const Discussions = () => {
       redirect: "follow",
     };
 
-    const response = await fetch(`http://localhost:3002/api/discussion/get-comment/${discussionId}`, requestOptions);
+    const response = await fetch(`http://185.216.27.140:3002/api/discussion/get-comment/${discussionId}`, requestOptions);
     const result = await response.json();
     if (result.success) {
       setComments(result.data);
@@ -62,7 +62,7 @@ const Discussions = () => {
     };
 
     try {
-      const response = await fetch(`http://localhost:3002/api/discussion/delete-comment/${commentId}`, requestOptions);
+      const response = await fetch(`http://185.216.27.140:3002/api/discussion/delete-comment/${commentId}`, requestOptions);
       const result = await response.json();
       if (result.success) {
         setComments(comments.filter(comment => comment.id !== commentId));
@@ -97,7 +97,7 @@ const Discussions = () => {
     };
 
     try {
-      const response = await fetch(`http://localhost:3002/api/discussion/add-comment`, requestOptions);
+      const response = await fetch(`http://185.216.27.140:3002/api/discussion/add-comment`, requestOptions);
       const result = await response.json();
       if (result.success) {
         setComments([...comments, { ...result.data, userEmail: user.user.email, date: new Date().toISOString() }]);

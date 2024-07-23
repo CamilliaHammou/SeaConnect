@@ -24,7 +24,7 @@ const MembershipPlans = () => {
       redirect: "follow",
     };
 
-    fetch("http://localhost:3002/api/plans/", requestOptions)
+    fetch("http://185.216.27.140:3002/api/plans/", requestOptions)
       .then((response) => response.json())
       .then((result) => {
         if (result.success) {
@@ -72,7 +72,7 @@ const MembershipPlans = () => {
       const config = {
         method: "post",
         maxBodyLength: Infinity,
-        url: "http://localhost:3002/api/membership/create-membership",
+        url: "http://185.216.27.140:3002/api/membership/create-membership",
         headers: {
           authorization: user.token,
           "Content-Type": "application/json",

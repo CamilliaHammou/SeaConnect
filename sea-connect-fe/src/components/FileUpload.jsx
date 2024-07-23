@@ -34,7 +34,7 @@ const FileUpload = ({ getFiles }) => {
 
     try {
       const response = await fetch(
-        `http://localhost:3002/api/document/upload/${title}`,
+        `http://185.216.27.140:3002/api/document/upload/${title}`,
         {
           method: "POST",
           headers: { authorization: user.token },

@@ -19,8 +19,8 @@ const ContributionDetails = ({ onClose, userEmail, user }) => {
     const encodedEmail = encodeURIComponent(userEmail);
 
     fetch(
-      `http://localhost:3002/api/contribution/user-contribution/${encodedEmail}`,
-      // `http://localhost:3002/api/contribution?email=${encodedEmail}`,
+      `http://185.216.27.140:3002/api/contribution/user-contribution/${encodedEmail}`,
+      // `http://185.216.27.140:3002/api/contribution?email=${encodedEmail}`,
       requestOptions
     )
       .then((response) => response.json())

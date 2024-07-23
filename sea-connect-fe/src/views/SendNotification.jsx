@@ -21,7 +21,7 @@ const SendNotification = () => {
   useEffect(() => {
     const fetchMembers = async () => {
       try {
-        const response = await fetch("http://localhost:3002/api/member/", {
+        const response = await fetch("http://185.216.27.140:3002/api/member/", {
           method: "GET",
           headers: {
             authorization: user.token,
@@ -88,7 +88,7 @@ const SendNotification = () => {
       const config = {
         method: "post",
         maxBodyLength: Infinity,
-        url: "http://localhost:3002/api/notification/create-notification",
+        url: "http://185.216.27.140:3002/api/notification/create-notification",
         headers: {
           authorization: user.token,
           "Content-Type": "application/json",

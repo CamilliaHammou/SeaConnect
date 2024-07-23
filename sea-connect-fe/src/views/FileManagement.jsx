@@ -18,7 +18,7 @@ const FileManagement = () => {
       redirect: "follow",
     };
 
-    fetch("http://localhost:3002/api/document", requestOptions)
+    fetch("http://185.216.27.140:3002/api/document", requestOptions)
       .then((response) => response.json())
       .then((result) => {
         if (result.data.length) {

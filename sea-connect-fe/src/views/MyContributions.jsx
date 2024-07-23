@@ -19,7 +19,7 @@ const MyContributions = () => {
     };
 
     fetch(
-      "http://localhost:3002/api/contribution/my-contribution",
+      "http://185.216.27.140:3002/api/contribution/my-contribution",
       requestOptions
     )
       .then((response) => response.json())

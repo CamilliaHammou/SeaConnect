@@ -27,7 +27,7 @@ const AssemblyVoteModel = ({ assembly, user, onClose }) => {
     };
 
     fetch(
-      `http://localhost:3002/api/assemblies/${assembly.id}/vote`,
+      `http://185.216.27.140:3002/api/assemblies/${assembly.id}/vote`,
       requestOptions
     )
       .then((response) => response.json())

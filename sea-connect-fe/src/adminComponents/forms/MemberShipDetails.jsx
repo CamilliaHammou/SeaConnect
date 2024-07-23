@@ -20,7 +20,7 @@ const MemberShipDetails = ({ onClose, userEmail, user }) => {
     const encodedEmail = encodeURIComponent(userEmail);
 
     fetch(
-      `http://localhost:3002/api/membership?email=${encodedEmail}`,
+      `http://185.216.27.140:3002/api/membership?email=${encodedEmail}`,
       requestOptions
     )
       .then((response) => response.json())

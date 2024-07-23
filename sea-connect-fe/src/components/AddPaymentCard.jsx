@@ -36,7 +36,7 @@ const PaymentForm = ({
       // };
 
       // const { data } = await axios.post(
-      //   "http://localhost:3002/api/stripe/create-setup-intent",
+      //   "http://185.216.27.140:3002/api/stripe/create-setup-intent",
       //   {
       //     customerId: user.user.stripeId,
       //   },
@@ -49,7 +49,7 @@ const PaymentForm = ({
       const config = {
         method: "post",
         maxBodyLength: Infinity,
-        url: "http://localhost:3002/api/stripe/create-setup-intent",
+        url: "http://185.216.27.140:3002/api/stripe/create-setup-intent",
         headers: {
           authorization: user.token,
           "Content-Type": "application/json",

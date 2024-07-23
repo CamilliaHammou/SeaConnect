@@ -21,7 +21,7 @@ const StartDiscussion = () => {
     const config = {
       method: "post",
       maxBodyLength: Infinity,
-      url: "http://localhost:3002/api/discussion/start",
+      url: "http://185.216.27.140:3002/api/discussion/start",
       headers: {
         authorization: user.token,
         "Content-Type": "application/json",

@@ -34,7 +34,7 @@ const PaymentModal = ({ amount, type, onClose, onSuccess }) => {
       const config = {
         method: "post",
         maxBodyLength: Infinity,
-        url: "http://localhost:3002/api/stripe/get-card-info",
+        url: "http://185.216.27.140:3002/api/stripe/get-card-info",
         headers: {
           authorization: user.token,
           "Content-Type": "application/json",
@@ -73,7 +73,7 @@ const PaymentModal = ({ amount, type, onClose, onSuccess }) => {
       const configForReadyForPayment = {
         method: "post",
         maxBodyLength: Infinity,
-        url: "http://localhost:3002/api/stripe/ready-for-payment",
+        url: "http://185.216.27.140:3002/api/stripe/ready-for-payment",
         headers: {
           authorization: user.token,
           "Content-Type": "application/json",
@@ -92,7 +92,7 @@ const PaymentModal = ({ amount, type, onClose, onSuccess }) => {
         const configConfirmPayment = {
           method: "post",
           maxBodyLength: Infinity,
-          url: "http://localhost:3002/api/stripe/confirm-and-make-payment",
+          url: "http://185.216.27.140:3002/api/stripe/confirm-and-make-payment",
           headers: {
             authorization: user.token,
             "Content-Type": "application/json",

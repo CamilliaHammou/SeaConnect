@@ -23,7 +23,7 @@ const UserNotifications = () => {
     };
 
     fetch(
-      "http://localhost:3002/api/notification",
+      "http://185.216.27.140:3002/api/notification",
       requestOptions
     )
       .then((response) => response.json())
@@ -47,7 +47,7 @@ const UserNotifications = () => {
     const config = {
       method: "post",
       maxBodyLength: Infinity,
-      url: "http://localhost:3002/api/notification/mark-read",
+      url: "http://185.216.27.140:3002/api/notification/mark-read",
       headers: {
         authorization: user.token,
         "Content-Type": "application/json",

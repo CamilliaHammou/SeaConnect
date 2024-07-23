@@ -40,7 +40,7 @@ const PlansForm = ({ isEditing, plan, getAllPlans, onClose }) => {
     };
 
     fetch(
-      `http://localhost:3002/api/plans/update-plan/${plan.id}`,
+      `http://185.216.27.140:3002/api/plans/update-plan/${plan.id}`,
       requestOptions
     )
       .then((response) => response.json())
@@ -81,7 +81,7 @@ const PlansForm = ({ isEditing, plan, getAllPlans, onClose }) => {
       redirect: "follow",
     };
 
-    fetch("http://localhost:3002/api/plans/create-plan", requestOptions)
+    fetch("http://185.216.27.140:3002/api/plans/create-plan", requestOptions)
       .then((response) => response.json())
       .then((result) => {
         if (result.success) {

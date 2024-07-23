@@ -17,7 +17,7 @@ const EventDetailsCard = ({ event, isUserSide = false }) => {
       const config = {
         method: "post",
         maxBodyLength: Infinity,
-        url: "http://localhost:3002/api/event/register",
+        url: "http://185.216.27.140:3002/api/event/register",
         headers: {
           authorization: user.token,
           "Content-Type": "application/json",

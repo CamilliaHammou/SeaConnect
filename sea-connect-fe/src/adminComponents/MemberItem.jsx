@@ -30,7 +30,7 @@ const MemberItem = ({
       redirect: "follow",
     };
 
-    fetch("http://localhost:3002/api/member/delete", requestOptions)
+    fetch("http://185.216.27.140:3002/api/member/delete", requestOptions)
       .then((response) => response.json())
       .then((result) => {
         console.log(result);

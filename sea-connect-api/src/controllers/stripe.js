@@ -56,7 +56,7 @@ const confirmSetupIntent = async (req, res) => {
     const { setupIntentId, paymentMethodId } = req.body;
     const confirmedIntent = await stripe.setupIntents.confirm(setupIntentId, {
       payment_method: paymentMethodId,
-      return_url: 'http://localhost:5000/',
+      return_url: 'http://185.216.27.140:5000/',
     });
 
     res.json({ confirmedIntent });
@@ -91,7 +91,7 @@ const confirmAndMakePayment =  async (req, res) => {
     const paymentSuccess = await stripe.paymentIntents.confirm(
       paymentId, {
       payment_method: paymentMethodId,
-      return_url: 'http://localhost:5000/',
+      return_url: 'http://185.216.27.140:5000/',
     });
 
     res.json({ paymentSuccess });

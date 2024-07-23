@@ -26,7 +26,7 @@ const UpdateEmailForm = ({ userEmail, onClose, getAllMembers }) => {
       redirect: "follow",
     };
 
-    fetch("http://localhost:3002/api/member/update_email", requestOptions)
+    fetch("http://185.216.27.140:3002/api/member/update_email", requestOptions)
       .then((response) => response.json())
       .then((result) => {
         console.log(result);

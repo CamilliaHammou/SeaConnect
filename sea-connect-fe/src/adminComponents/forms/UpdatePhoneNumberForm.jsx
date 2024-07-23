@@ -31,7 +31,7 @@ const UpdatePhoneNumberForm = ({
       redirect: "follow",
     };
 
-    fetch("http://localhost:3002/api/member/update_phone", requestOptions)
+    fetch("http://185.216.27.140:3002/api/member/update_phone", requestOptions)
       .then((response) => response.json())
       .then((result) => {
         console.log(result);

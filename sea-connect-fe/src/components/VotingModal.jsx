@@ -27,7 +27,7 @@ const VotingModal = ({ vote, onClose, voteId }) => {
       redirect: "follow",
     };
 
-    fetch("http://localhost:3002/api/vote/cast-vote", requestOptions)
+    fetch("http://185.216.27.140:3002/api/vote/cast-vote", requestOptions)
       .then((response) => response.json())
       .then((result) => {
         console.log(result);

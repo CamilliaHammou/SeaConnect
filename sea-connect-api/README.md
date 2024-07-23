@@ -12,7 +12,7 @@ As we are using replica set, so we need to initiate the replica set, for this, o
 
 Once mongosh shell is connected, initiate the replica set using “rs.initiate()”, we can check the replica set status using “rs.status()” Connect MongoDB compass
 
-To connect mongoDb use the following connection string: “mongodb://localhost:27017/?replicaSet=rs0&directConnection=true”
+To connect mongoDb use the following connection string: “mongodb://185.216.27.140:27017/?replicaSet=rs0&directConnection=true”
 
 
 if issues

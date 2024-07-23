@@ -30,7 +30,7 @@ const MembersManagements = () => {
         redirect: "follow",
       };
 
-      fetch("http://localhost:3002/api/stripe/create-customer", requestOptions)
+      fetch("http://185.216.27.140:3002/api/stripe/create-customer", requestOptions)
         .then((response) => {
           return;
         })
@@ -53,7 +53,7 @@ const MembersManagements = () => {
       redirect: "follow",
     };
 
-    fetch("http://localhost:3002/api/member/", requestOptions)
+    fetch("http://185.216.27.140:3002/api/member/", requestOptions)
       .then((response) => response.json())
       .then((result) => {
         if (result.success) {

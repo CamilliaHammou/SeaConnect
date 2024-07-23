@@ -24,7 +24,7 @@ const VotesManagementPage = () => {
       redirect: "follow",
     };
 
-    fetch("http://localhost:3002/api/vote/get-active-votes", requestOptions)
+    fetch("http://185.216.27.140:3002/api/vote/get-active-votes", requestOptions)
       .then((response) => response.json())
       .then((result) => {
         if (result.success) {
@@ -45,7 +45,7 @@ const VotesManagementPage = () => {
       redirect: "follow",
     };
 
-    fetch("http://localhost:3002/api/vote/get-compeleted-votes", requestOptions)
+    fetch("http://185.216.27.140:3002/api/vote/get-compeleted-votes", requestOptions)
       .then((response) => response.json())
       .then((result) => {
         if (result.success) {

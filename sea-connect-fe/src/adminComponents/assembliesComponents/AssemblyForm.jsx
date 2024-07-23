@@ -48,7 +48,7 @@ const AssemblyForm = ({ assembly, getAllAssemblies, isEditing, onClose }) => {
     };
 
     fetch(
-      `http://localhost:3002/api/assemblies/update/${assembly.id}`,
+      `http://185.216.27.140:3002/api/assemblies/update/${assembly.id}`,
       requestOptions
     )
       .then((response) => response.json())
@@ -90,7 +90,7 @@ const AssemblyForm = ({ assembly, getAllAssemblies, isEditing, onClose }) => {
       redirect: "follow",
     };
 
-    fetch("http://localhost:3002/api/assemblies/create", requestOptions)
+    fetch("http://185.216.27.140:3002/api/assemblies/create", requestOptions)
       .then((response) => response.json())
       .then((result) => {
         console.log(result);
